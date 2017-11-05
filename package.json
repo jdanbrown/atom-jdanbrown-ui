@@ -1,0 +1,14 @@
+{
+  "name": "dan-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "keywords": [
+    "theme",
+    "ui",
+    "dark"
+  ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  }
+}

@@ -1,0 +1,47 @@
+atom-panel-container {
+  &.bottom {
+    z-index: +1000;
+  }
+}
+
+atom-panel {
+  &.bottom {
+    border-top: 1px solid @tool-panel-border-color;
+    background: @base-background-color;
+  }
+}
+
+atom-pane-container {
+  background: linear-gradient(@app-background-color, @base-background-color);
+}
+
+atom-pane-container atom-pane-axis.horizontal > *:last-child {
+  border-right: none;
+}
+
+atom-pane-container atom-pane-axis.horizontal > * {
+  border-right: 1px solid @pane-border-color;
+}
+
+atom-pane-container atom-pane-axis.vertical > atom-pane-resize-handle.vertical {
+  border-top: 1px solid @pane-border-color;
+  margin-top: 0;
+}
+
+atom-pane.active {
+  outline: 1px solid @active-pane-border-color;
+  z-index: 1001; // Above status-bar (1000), below cmd pallete (9999)
+}
+
+.inset-panel {
+  .panel-heading {
+    .text(heading);
+  }
+}
+
+.tool-panel {
+  .panel-body,
+  .panel-heading {
+    background: transparent;
+  }
+}
