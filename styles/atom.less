@@ -52,8 +52,13 @@ kbd {
 
 .scrollbars-visible-always {
   /deep/::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+
+    // No scrollbars anywhere
+    display: none;
+
+    width: 6px;
+    height: 6px;
+
   }
 
   /deep/::-webkit-scrollbar-track {
